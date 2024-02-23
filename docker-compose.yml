@@ -1,0 +1,15 @@
+---
+version: '3'
+ 
+services:
+  packet_graph:
+    image: johncapobianco/packet_graph:packet_graph
+    container_name: packet_graph
+    restart: always        
+    build: 
+      context: ./
+      dockerfile: ./docker/Dockerfile
+    ports:
+      - "8508:8508"
+    volumes:
+      - ./config.toml:/root/.streamlit/config.toml
