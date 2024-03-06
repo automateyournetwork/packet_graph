@@ -15,10 +15,6 @@ import streamlit.components.v1 as components
 load_dotenv()
 openai_api_key = os.getenv('OPENAI_API_KEY')
 
-# Load environment variables
-load_dotenv()
-openai_api_key = os.getenv('OPENAI_API_KEY')
-
 # Prompt template for knowledge triple extraction
 _DEFAULT_KNOWLEDGE_TRIPLE_EXTRACTION_TEMPLATE = (
     "You are a networked intelligence helping a human track knowledge triples"
